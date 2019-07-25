@@ -1,0 +1,106 @@
+
+.login_box {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    .login-main {
+        height: 100%;
+        // background: url("../assets/login.jpg") no-repeat 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        .login-container {
+            width: 1127px;
+            height: 498px;
+            border-radius: 2px;
+            -moz-border-radius:2px;
+            margin: 0 auto;
+            background-color: rgba($color: #fff, $alpha: 0.65);
+            box-shadow: 8px 29px 50px #00000062;
+            display: flex;
+        }
+        .logo-con {
+            flex: 1;
+            height: 100%;
+            padding: 0 77px;
+            .con-top {
+                margin-top: 123px;
+                font-family: 'pingfangSC' ;
+                font-size: 60px;
+                color: #333;
+                font-weight:550;
+            }
+            .con-bottom {
+                font-family: "PingFangFC Regular";
+                font-size: 30px;
+                color: #333;
+                font-weight: 700;
+            }
+        }
+        .login-form {
+            width: 399px;
+            height: 100%;
+            background-color: rgba($color: #fff, $alpha: 1);
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding: 123px 65px;
+            box-sizing: border-box;
+            .el-form-item {
+                margin-bottom: 26px;
+                position: relative;
+
+                i.iconfont {
+                    position: absolute;
+                    color: #a1a1a1;
+                    z-index: 100;
+                    font-size: 22px;
+                    left: 10px;
+                }
+            }
+            .el-input input {
+                height: 46px;
+                border-radius: 23px;
+                -moz-border-radius:23px;
+                background-color: rgba($color: #f1f1f1, $alpha: 1);
+                padding-left: 35px;
+                width: 260px;
+                font-size: 14px;
+            }
+            .el-input__suffix {
+              right: 14px;
+            }
+            .el-checkbox {
+                margin-left: 12px;
+            }
+            .el-checkbox__label {
+                color: #999999;
+                font-size: 12px;
+            }
+            button {
+                width: 260px;
+                border-radius: 23px;
+                -moz-border-radius:23px;
+                height: 46px;
+                line-height: 46px;
+                margin-top: 36px;
+                border: none;
+                background-color: #00c1de;
+                color: #fff;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .login_box {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        .login-main{
+             overflow: auto;
+        }
+    }
+}
